@@ -1,0 +1,54 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Task</title>
+    <link rel="stylesheet" href="addTask.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="addTask.html">Add Task</a></li>
+            <li><a href="../delete/delettask.html">Delete Task</a></li>
+            <li><a href="../update/updatetask.html">Update Task</a></li>
+            <li><a href="/register.html">register</a></li>
+            <li><a href="/login.html">login</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Add Task</h1>
+        <form id="add-task-form">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required>
+            
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea>
+            
+            <label for="status">Status:</label>
+            <select id="status" name="status" required>
+                <option value="Todo">Todo</option>
+                <option value="In Progress">In Progress</option>
+                <option value="Done">Done</option>
+            </select>
+            
+            <label for="priority">Priority:</label>
+            <select id="priority" name="priority" required>
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+            
+            <label for="due-date">Due Date:</label>
+            <input type="date" id="due-date" name="due-date" required>
+            
+            <button type="submit">Add Task</button>
+        </form>
+        <p id="response-message"></p>
+    </div>
+    <script src="addtask.js"></script>
+</body>
+</html>

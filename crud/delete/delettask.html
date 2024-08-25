@@ -1,0 +1,31 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Task</title>
+    <link rel="stylesheet" href="delete.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="../add/addTask.html">Add Task</a></li>
+            <li><a href="delete-task.html">Delete Task</a></li>
+            <li><a href="../update/updatetask.html">Update Task</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Delete Task</h1>
+        <form id="delete-task-form">
+            <label for="task-id">Task ID:</label>
+            <input type="text" id="task-id" name="task-id" required>
+            <button type="submit">Delete Task</button>
+        </form>
+        <p id="response-message"></p>
+    </div>
+    <script src="deletetask.js"></script>
+</body>
+</html>
